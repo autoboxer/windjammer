@@ -1,0 +1,83 @@
+name: Bug report
+description: Create a report to help us improve
+title: "Bug"
+labels: [bug]
+assignees: "-"
+body:
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: Take a moment to review
+      options:
+        - label: I have [searched](https://github.com/autoboxer/windjammer/issues?q=is%3Aissue) for duplicate or closed issues
+          required: true
+        - label: I have read the [contributing guidelines](https://github.com/autoboxer/windjammer/blob/master/CONTRIBUTING.md)
+          required: true
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: Provide a clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: bug-expected-behavior
+    attributes:
+      label: Expected behavior
+      description: Provide a clear and concise description of what you expected to happen.
+  - type: textarea
+    id: bug-steps
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+  - type: textarea
+    id: bug-repro
+    attributes:
+      label: Reproducible Example
+      description: Provide a minimum reproduction here.
+    validations:
+      required: true
+  - type: textarea
+    id: bug-screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+  - type: dropdown
+    id: os
+    attributes:
+      label: What operating system(s) are you seeing the problem on?
+      multiple: true
+      options:
+        - Windows
+        - macOS
+        - Android
+        - iOS
+        - Linux
+  - type: dropdown
+    id: browser
+    attributes:
+      label: What browser(s) are you seeing the problem on?
+      multiple: true
+      options:
+        - Chrome
+        - Safari
+        - Firefox
+        - Microsoft Edge
+        - Opera
+  - type: input
+    id: windjammer-version
+    attributes:
+      label: What version of windjammer are you using?
+      placeholder: ex. 1.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: bug-additional
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.
