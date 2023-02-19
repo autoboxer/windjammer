@@ -20,6 +20,7 @@
     "url": "https://github.com/autoboxer/windjammer/issues"
   },
   "devDependencies": {
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "tailwindcss": "^3.2.7"
   }
 }
