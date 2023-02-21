@@ -7,7 +7,8 @@ module.exports = {
   'extends': [
     'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
+    'prettier'
   ],
   'overrides': [
   ],
@@ -18,7 +19,8 @@ module.exports = {
   },
   'plugins': [
     'react',
-    '@typescript-eslint'
+    '@typescript-eslint',
+    'prettier'
   ],
   'rules': {
     'indent': ['error', 2],
