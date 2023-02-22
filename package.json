@@ -9,7 +9,7 @@
     "check-types": "tsc --project tsconfig.json --pretty --noEmit",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
     "validate": "npm run check-types && npx lint-staged",
-    "commit": "cz"
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
