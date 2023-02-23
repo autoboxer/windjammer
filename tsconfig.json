@@ -4,15 +4,18 @@
     "baseUrl": ".",
     "declaration": true,
     "declarationMap": true,
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "jsx": "react",
     "lib": ["esnext", "dom"],
     "module": "esnext",
     "moduleResolution": "node",
     "noImplicitAny": true,
+    "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es5"
+    "target": "es6"
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
