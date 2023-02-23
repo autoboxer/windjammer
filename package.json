@@ -5,11 +5,13 @@
   "main": "src/index.tsx",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "build": "turbo run build",
+    "build:fast": "turbo run build:fast",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "check-types": "tsc --project tsconfig.json --pretty --noEmit",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
-    "validate": "pnpm check-types && npx lint-staged",
+    "typecheck": "tsc --project tsconfig.json --pretty --noEmit",
+    "lint": "eslint packages --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
+    "validate": "pnpm typecheck && npx lint-staged",
     "commit": "git-cz"
   },
   "repository": {
