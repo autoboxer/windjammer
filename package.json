@@ -2,7 +2,6 @@
   "name": "windjammer",
   "version": "0.1.0",
   "description": "A full-featured react component library built on top of tailwindcss",
-  "main": "src/index.tsx",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "turbo run build",
