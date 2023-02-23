@@ -4,6 +4,7 @@
   "description": "A full-featured react component library built on top of tailwindcss",
   "main": "src/index.tsx",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "check-types": "tsc --project tsconfig.json --pretty --noEmit",
