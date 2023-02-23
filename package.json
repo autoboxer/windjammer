@@ -9,7 +9,7 @@
     "prepare": "husky install",
     "check-types": "tsc --project tsconfig.json --pretty --noEmit",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
-    "validate": "npm run check-types && npx lint-staged",
+    "validate": "pnpm check-types && npx lint-staged",
     "commit": "git-cz"
   },
   "repository": {
