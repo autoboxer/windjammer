@@ -25,6 +25,10 @@
   "bugs": {
     "url": "https://github.com/autoboxer/windjammer/issues"
   },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
