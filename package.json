@@ -5,11 +5,13 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "turbo run build",
-    "build:fast": "turbo run build:fast",
+    "dev": "turbo run dev --no-cache --continue",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install",
     "typecheck": "tsc --project tsconfig.json --pretty --noEmit",
-    "lint": "eslint packages --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
     "validate": "pnpm typecheck && npx lint-staged",
     "commit": "git-cz"
   },
