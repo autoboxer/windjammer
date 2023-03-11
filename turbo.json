@@ -1,21 +1,21 @@
 {
-  "$schema": "https://turborepo.org/schema.json",
-  "globalDependencies": ["tsconfig.json"],
+  "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "build": {
-      "outputs": ["dist/**"],
+      "outputs": ["dist/**", "storybook-static/**"],
       "dependsOn": ["^build"]
     },
-    "build:fast": {
-      "outputs": ["dist/**"],
-      "dependsOn": ["^build:fast"]
-    },
+    "lint": {},
     "dev": {
-      "cache": false
+      "cache": false,
+      "persistent": true
     },
     "typecheck": {
       "cache": false,
       "dependsOn": ["^typecheck"]
+    },
+    "clean": {
+      "cache": false
     }
   }
 }
